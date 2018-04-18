@@ -50,7 +50,20 @@ var employees = [
     3. Return the updated employee array.
 */
 
-//Code Here
+function employeeUpdater(){
+  for (let i in employees){
+    if(employees[i].firstName==="Theo")
+    {
+      //console.log(employees[i]);
+      delete employees[i];
+    }
+    else if(employees[i].firstName==="Lorie"){
+      //console.log(employees[i]);
+      employees[i].department = "HR"
+    }
+  }
+  return employees;
+}
 
 
 
@@ -68,7 +81,15 @@ var workplaceAccidents = [12, 56, 44, 3, 29, 56, 56, 3, 7, 12];
     3. Return the updated array.
 */
 
-//Code Here
+function removeDuplicates(arr){
+  for(let i=0; i<arr.length;i++){
+    if(arr.indexOf(i)>-1){
+      for(let j=0; j<arr.length;j++){
+        if()
+      }
+    }
+  }
+}
 
 
 
@@ -97,8 +118,8 @@ var cat = {
 */
 
 //Code Here
-var grumpyActivity;
-var fluffy2ndFriend;
+var grumpyActivity = cat.catFriends[0].activities[1];
+var fluffy2ndFriend = cat.catFriends[1].name;
 
 
 

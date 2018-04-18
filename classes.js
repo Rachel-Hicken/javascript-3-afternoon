@@ -29,7 +29,19 @@
   Call your class Employee and receive all the data in the constructor in the order listed above.
 */
 
-//Code Here
+class Employee{
+  constructor(first_name,last_name,email,age){
+    this.first_name= first_name;
+    this.last_name= last_name;
+    this.email=email;
+    this.age=age;
+  }
+
+  makeWidget(){
+    //return this.first_name + " " +this.last_name+ " "+ "Widget";
+    return `${this.first_name} ${this.last_name} Widget`
+  }
+}
 
 
 
@@ -47,10 +59,41 @@
       - Fire removes employees from their list of reports at the given index
 
   Call your new class Manager
+
+  2-new class called manager, add prop
+  3-
+  4-
+  5-no official functions
+  6-class, constructor, method(hire), method(fire), call new class Manager
+  7-class{
+    constructor(prop, prop, .., new prop){
+      this.elements
+      ???
+    }
+    hire(?){
+
+    }
+    fire(?)
+  }
 */
 
-//Code Here
+class Manager{
+  constructor(first_name,last_name,email,age){
+    this.first_name= first_name;
+    this.last_name= last_name;
+    this.email=email;
+    this.age=age;
+    this.reports = [];
+  }
 
+  hire(employee){
+    var newEmployee = this.reports.push(employee);
+  }
+  fire(index){
+    this.reports.splice(index, 1);
+  }
+}
+var newManager = new Manager("Luke", "Skywalker","skywalker@starwars.com",23);
 
 
 ////////// PROBLEM 3 //////////
