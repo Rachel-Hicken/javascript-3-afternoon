@@ -105,8 +105,8 @@ const orders = [{"price":15,"tax":0.09},{"price":42,"tax":0.07},{"price":56,"tax
   Use a higher order method to get the sum of all the order totals after adding in the sales tax
 */
 
-let ordersTotal = orders.reduce((total, acc, i, arr)=>
-
+// let ordersTotal = orders.reduce((total, acc, i, arr)=>
+let ordersTotal = orders.map(el=>el.price + el.price*el.tax)
 
 
 ////////// PROBLEM 6 //////////
